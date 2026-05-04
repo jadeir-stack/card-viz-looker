@@ -1,37 +1,66 @@
 {
   "name": "Cards Produtos Premium",
-  "description": "Cards estilo pricing para produtos e planos",
+  "description": "Visualização em cards estilo SaaS",
   "organization": "Custom",
-  "version": "1.0",
+  "logoUrl": "",
+  "devMode": true,
+
+  "components": [
+    {
+      "name": "main"
+    }
+  ],
+
   "data": {
-    "dimensions": [
-      { "id": "modalidade", "name": "Modalidade" },
-      { "id": "produto", "name": "Produto" },
-      { "id": "descricao", "name": "Descrição" }
-    ],
-    "metrics": [
-      { "id": "total_anual", "name": "Total Anual" },
-      { "id": "total_mensal", "name": "Total Mensal" }
+    "schema": [
+      {
+        "id": "modalidade",
+        "name": "Modalidade",
+        "type": "TEXT"
+      },
+      {
+        "id": "produto",
+        "name": "Produto",
+        "type": "TEXT"
+      },
+      {
+        "id": "descricao",
+        "name": "Descrição",
+        "type": "TEXT"
+      },
+      {
+        "id": "total_anual",
+        "name": "Total Anual",
+        "type": "NUMBER"
+      },
+      {
+        "id": "total_mensal",
+        "name": "Total Mensal",
+        "type": "NUMBER"
+      }
     ]
   },
+
   "style": [
     {
       "id": "qtd_cards",
-      "label": "Quantidade de Cards",
+      "name": "Quantidade de Cards",
       "type": "NUMBER",
       "defaultValue": 10
     },
     {
       "id": "ordenar_por",
-      "label": "Ordenar por",
-      "type": "TEXT",
+      "name": "Ordenar por",
+      "type": "TEXTINPUT",
       "defaultValue": "total_anual"
     },
     {
       "id": "ordem",
-      "label": "Ordem (asc/desc)",
-      "type": "TEXT",
+      "name": "Ordem (asc/desc)",
+      "type": "TEXTINPUT",
       "defaultValue": "desc"
     }
-  ]
+  ],
+
+  "messageSchemaVersion": 1
 }
