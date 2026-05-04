@@ -1,13 +1,14 @@
 body {
-  font-family: Arial;
   margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
 }
 
 #container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 16px;
-  padding: 10px;
+  padding: 12px;
 }
 
 .card {
@@ -19,42 +20,45 @@ body {
 }
 
 .modalidade {
+  display: inline-block;
   background: #e6f0ff;
   color: #2b5fd9;
-  padding: 6px 10px;
-  border-radius: 8px;
   font-size: 12px;
   font-weight: 600;
-  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .produto {
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .label {
   font-size: 11px;
   color: #888;
+  text-transform: uppercase;
 }
 
 .total {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 800;
   color: #f5a200;
+  margin-bottom: 10px;
 }
 
 .mensal {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .lista {
+  padding-left: 16px;
   font-size: 13px;
   color: #555;
-  padding-left: 16px;
 }
 
 .lista li::marker {
@@ -64,9 +68,9 @@ body {
 .btn {
   width: 100%;
   padding: 10px;
-  background: #f5a200;
   border: none;
-  border-radius: 8px;
+  background: #f5a200;
   font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
 }
